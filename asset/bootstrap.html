@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eMobilis | Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">eMobilis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Study areas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#courses">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="#courses">Cyber Security</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#courses">Software Engineering</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search courses" aria-label="Search courses">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="bg-primary text-white text-center py-5">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">Welcome to eMobilis</h1>
+            <p class="lead">Learn digital skills, build your future, and grow with eMobilis.</p>
+            <a class="btn btn-warning btn-lg mt-2" href="#courses">Explore Courses</a>
+        </div>
+    </header>
+
+    <section id="courses" class="bg-warning py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+            <h2>Our Courses</h2>
+            <p class="text-body-secondary">Choose a course to start building your future.</p>
+            </div>
+            <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 text-center">
+                    <div class="card-header">Technology</div>
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Computer Science</h3>
+                        <p class="card-text">Learn programming, problem solving, and the foundations of computing.</p>
+                        <a href="#contact" class="btn btn-primary">Learn more</a>
+                    </div>
+                    <div class="card-footer text-body-secondary">Applications open</div>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 text-center">
+                    <div class="card-header">Technology</div>
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Cyber Security</h3>
+                        <p class="card-text">Study how to protect computers, networks, and information online.</p>
+                        <a href="#contact" class="btn btn-primary">Learn more</a>
+                    </div>
+                    <div class="card-footer text-body-secondary">Applications open</div>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 text-center">
+                    <div class="card-header">Technology</div>
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Software Engineering</h3>
+                        <p class="card-text">Practice designing, building, and maintaining useful software.</p>
+                        <a href="#contact" class="btn btn-primary">Learn more</a>
+                    </div>
+                    <div class="card-footer text-body-secondary">Applications open</div>
+                </article>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google map -->
+    <section class="py-5">
+        <div class="containertext-center">
+            <h2 class="h3 text-center mb-4">Find eMobilis</h2>
+            <div class="w-100" style="height: 250px;">
+                <iframe class="w-100 h-100 border-0"
+                    src="https://www.google.com/maps?q=eMobilis,+Kipro+Center,+Sports+Road,+Westlands,+Nairobi,+Kenya&amp;output=embed"
+                    title="Map showing eMobilis at Kipro Center, Sports Road, Westlands, Nairobi"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-body-tertiary text-center py-4">
+        <div class="container"><p class="fs-5 mb-0">&copy; 2026 eMobilis, Nairobi. All rights reserved.</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
